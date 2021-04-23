@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;500;600;700&display=swap');
+
+html, body {
+  font-family: 'Sora', sans-serif;;
+  font-weight: 100;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+.main {
+  display: flex;
+  flex: 1;
+  background: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align : center;
+}
+
+.image{
+  background: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+#image{
+  min-width:100%;
+}
+
+.main1{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+}
+
+.mypicture, .projectpicture, .playpicture{
+  background: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 50%;
+}
+
+
+#me, #project, #playpic{
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+
+.mydescription, .projectdescription, .playdescription{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: right;
+  width: 50%;
+  margin:1em;
+  padding: 1em;
+  word-wrap: break-word;
+  font-size: 20px;
+    
+}
+
+.finalmessage{
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 1em;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.header{
+  background: white;
+  height: 6vh;
+  display:flex;
+  flex-direction: row;
+  padding: 1em;
+  justify-content: flex-end;
+  color: #0f0f0f;
+  font font-weight: 100;
+  font size: 20px;
+  border-bottom: 1px solid black;
+  flex-flow: row wrap;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #0f0f0f;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+a:hover {
+  font-weight: 500;
+}
+
+
+.image{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 1em;
+}
+
+
+.footer {
+  background: white;
+  height: 10vh;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  font-weight: 100;
+  font-size: 10px;
+  border-top: 1px solid black;
+  padding: 2em;
+  margin-top: 0em;
+  /*margin-top: 1em if you want space between pic and footer*/
+}
+
+
+.form{
+  display:flex;
+  flex-direction: column;
+  background:white;
+  align-items: right;
+  justify-content: center;
+  margin:1em;
+  padding: 1em;
+  overflow: hidden;
+  width:50%;
+}
+
+.socialmedia{
+  background:white;
+  display: flex;
+   flex-direction: column;
+  justify-content: flex-start;
+  align-items: right;
+  margin:1em;
+  padding: 1em;
+  /*word-break: break-all;*/
+  word-wrap: break-word;
+  font-size: 20px;
+  width:50%;
+}
+
+@media all and (max-width: 700px) {
+  .header {
+    justify-content: space-around;
+  }
+  
+}
+
+@media all and (max-width: 600px) {
+  .header {
+    flex-direction:column;
+    padding: 0;
+  }
+  .header a {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .header li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main1 {
+    flex-direction: column;
+  }
+  .mypicture, .projectpicture, .playpicture{
+    width:100%;
+  }
+  .mydescription, .projectdescription, .playdescription{
+    width:auto;
+  }
+
+  .form{
+    width:auto;
+  }
+  .socialmedia{
+    width:auto;
+  }
+
+
+  }
+}
+
+
+.welcome{
+  background: white;
+  margin-top:3vh;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.slideshow-container{
+  display:flex;
+  flex-flow:column wrap;
+  background:white;
+  margin-top: 4vh;
+  width:50%;
+  /*height: 50%*/
+  position:relative;
+  left:25%;
+  justify-content: flex-start;
+}
+
+.mySlides{
+  background:white;
+  display: none;
+  padding:0;
+
+}
+
+.italianword{
+  background:white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.explanation{
+  background:white;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.formitems {
+  
+  background:white;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 45px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: left;
+  font-family: 'Sora', sans-serif;
+  margin-top: 5px;
+}
+
+#form-comment{
+background:white;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 150px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Sora', sans-serif;
+  text-align: left;
+  margin-top: 1em;
+  resize: none;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 100px;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 2em;
+  margin-top:1em;
+}
+
+button{
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 200px;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+
+button:hover, #send:hover{
+  color: white;
+  background-color: black;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container{
+  background:white;
+  display: flex;
+  flex-flow: row wrap;
+  /*flex:1;*/
+  width:100%;
+  justify-content: space-around;
+  font-size: 20px;
+font-weight: 100;
+  margin:1em;
+  padding:1em;
+  width:auto;
+}
+
+
+.title{
+  background:white;
+   margin:1em;
+  padding: 1em;
+}
+
+
+.square1{
+  background:white;
+  width:25%;
+  min-width: 270px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.square2{
+  background:#f2f2f2;
+  width:25%;
+  min-width: 270px;
+  color:black;
+  
+  
+  
+}
+
+.square3{
+  background:white;
+  width:25%;
+  min-width: 270px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  
+}
+
+.square4{
+  
+  
+  background:#f2f2f2;
+  width:25%;
+  min-width: 270px;
+  color:black;
+  
+  
+
+}
+
+.square5{
+  background:#f2f2f2;
+  width:25%;
+  min-width: 270px;
+  color:black;
+  
+  
+  
+}
+
+.square6{
+  background:white;
+  width:25%;
+  min-width: 270px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  
+}
+  
+
+.square7{
+  background:#f2f2f2;
+  width:25%;
+  min-width: 270px;
+  color:black;
+
+  
+}
+
+.square8{
+  background:white;
+  width:25%;
+  min-width: 270px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+#img1, #img2, #img3, #img4{
+  
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+
+}
+
+/*.square2:hover, .square4:hover, .square5:hover,.square7:hover{
+  font-weight:500;
+}*/
+
+
+.choice{
+  display:flex;
+  justify-content: space-between;
+
+  background:white;
+  margin:1em;
+  padding:1em;
+}
+
+#choice{
+  font-size: 20px;
+  margin:1em;
+  padding:1em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.choicefinal{
+  display:flex;
+  justify-content: center;
+
+  background:white;
+  margin:1em;
+  padding:1em;
+}
+
+#backchoice{
+  display:flex;
+  background:white;
+  margin:1em;
+  padding:1em;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .square1, .square2, .square3, .square4, .square5, .square6, .square7, .square8{
+    width:auto;
+
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .square1, .square2, .square3, .square4, .square5, .square6, .square7, .square8{
+    width:33%;
+  }
+  
+}
+
+@media screen and (max-width: 920px) {
+  
+  .square1, .square2, .square3, .square4, .square5, .square6, .square7, .square8{
+    width:50%;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  .square1, .square2, .square3, .square4, .square5, .square6, .square7, .square8{
+    width:100%;
+
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .choice{
+    flex-direction: column;
+    align-items: center;}
+
+  #backchoice{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+#swappable #orig { display: none; }
+#swappable:hover #orig { display: inline-block; }
+#swappable:hover #update { display: none; }
+
+#swappable {
+  color: green;
+  font-weight: 500;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
